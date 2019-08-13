@@ -1,0 +1,233 @@
+body {
+  font-size: .875rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+ .sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 85px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+ [role="main"] {
+  padding-top: 50px; /* Space for fixed navbar */
+}
+
+[role="main2"] {
+  padding-top: 80px; /* Space for fixed navbar */
+}
+
+[role="main3"] {
+  padding-top: 60px; /* Space for fixed navbar */
+}
+
+[role="main4"] {
+  padding-top: 100px; /* Space for fixed navbar */
+}
+
+/*
+ * Navbar
+ */
+
+ .navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+footer{
+  background-color: #2c3e50;
+  color: #ecf0f1;
+
+}
+.errores{
+	padding: 10px 30px;
+}
+
+.error{
+	color: #e74c3c;
+}
+
+.valido{
+	border-color: #2ecc71;
+}
+
+.invalido{
+	border-color: #c0392b;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.subcategoria{
+  width: 80%;
+  float: left;
+  margin-top: 1%;
+}
+
+.fieldname{
+  width: 85%;
+  display: inline;
+}
+
+.remove{
+
+  margin-left: 1%;
+}
+.subfield .remove{
+  margin-top: 2%;
+
+}
+
+.new{
+
+  margin-left: 1%;
+}
+.my-legend .legend-title {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 90%;
+}
+.my-legend .legend-scale ul {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+.my-legend .legend-scale ul li {
+  font-size: 80%;
+  list-style: none;
+  margin-left: 0;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 1px solid #999;
+}
+.my-legend .legend-source {
+  font-size: 70%;
+  color: #999;
+  clear: both;
+}
+.my-legend a {
+  color: #777;
+}
+.btn-a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-app {
+  color: white;
+  box-shadow: none;
+  border-radius: 3px;
+  position: relative;
+  padding: 10px 15px;
+  margin: 0;
+  min-width: 60px;
+  max-width: 80px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  font-size: 12px;
+  transition: all .2s;
+  background-color: steelblue;
+}
